@@ -1,0 +1,23 @@
+Dado el siguiente programa en lenguaje C y el comando gcc:
+#include <stdio.h>
+#define M "La suma es: %d"
+#define A 9
+int main ()
+{
+  int B = 5;
+  int C = A + B;
+  printf(M,C);
+  return 0;
+}
+
+utilizando algún editor de texto plano crear un archivo con el programa.
+con el switch -E del comando gcc, realizar el precompilado.  
+con el switch -S del comando gcc, generar el archivo ensamblador.
+transcribir en el documento:
+el programa fuente
+la última parte de la precompilación donde se encuentra la función main y analizar la trasformación realizada.
+el contenido del archivo ensamblador, comentando todas las líneas de código que sea capaz de interpretar. 
+Modificar el programa del punto 1, introduciendo un solo error, compilarlo con el comando gcc.  
+primero con un error léxico
+luego con un error sintáctico
+transcribir en el documento cada programa modificado, con el análisis del mensaje de error arrojado por el compilador.
